@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>Patruljeringsstatistik for de seneste 7 dage på dawiki</title>
+</head>
+<body>
+	<h1>Patruljeringsstatistik for de seneste 7 dage på dawiki</h1>
+	<p>Senest opdateret: {{ timestamp }} UTC
+	<table>
+		<thead>
+		<tr>
+			<th>Patruljeringer</th>
+			<th>Bruger</th>
+		</tr>
+		</thead>
+		{% for user, patroln in stats.iteritems() %}
+		<tr>
+			<td>{{ patroln }}</td>
+			<td>{{ user }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
