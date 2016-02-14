@@ -7,6 +7,7 @@ setup(
     author_email="chris@cgt.name",
     license="Boost Software License 1.0",
     packages=find_packages(),
+    tests_require=["pytest"],
     install_requires=["appdirs", "Jinja2", "phpserialize", "wmflabs"],
     package_data={
         "patrolstats": ["templates/*"],
