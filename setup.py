@@ -7,6 +7,7 @@ setup(
     author="Christoffer G. Thomsen",
     author_email="chris@cgt.name",
     license="Boost Software License 1.0",
+    version="0.1",
     packages=find_packages(),
     include_package_data=True,
     tests_require=["pytest"],
