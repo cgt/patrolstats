@@ -13,7 +13,12 @@ def test_check_config_missing_required():
 
 def test_check_config():
     valid_cfg = {
-        "wikis": ["doesn't matter", "fakewiki"],
+        "wikis": {
+            "fakewiki": {
+                "language": "da",
+            },
+            "wikiwithdefaultsettings": {},
+        },
         "output_dir": "/dev/null",
     }
     config.check_config(valid_cfg)

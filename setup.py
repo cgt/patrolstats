@@ -1,5 +1,6 @@
-from setuptools import setup, find_packages
+#!/usr/bin/env python2
 
+from setuptools import setup, find_packages
 
 setup(
     name="patrolstats",
@@ -7,11 +8,9 @@ setup(
     author_email="chris@cgt.name",
     license="Boost Software License 1.0",
     packages=find_packages(),
+    include_package_data=True,
     tests_require=["pytest"],
     install_requires=["appdirs", "Jinja2", "phpserialize", "wmflabs"],
-    package_data={
-        "patrolstats": ["templates/*"],
-    },
     entry_points={
         "console_scripts": [
             "patrolstats=patrolstats:main",

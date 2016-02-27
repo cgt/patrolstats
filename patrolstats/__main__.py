@@ -41,7 +41,7 @@ def main():
         logger.debug("Getting stats for {}".format(wiki))
         stats = db.get_patrol_stats(wiki, one_week_ago())
         logger.debug("Generating stats page for {}".format(wiki))
-        page = genpage(stats)
+        page = genpage(stats, wiki, cfg["wikis"][wiki])
 
         file_path = os.path.join(cfg["output_dir"], "{}.html".format(wiki))
         with io.open(file_path, mode="w", encoding="utf8") as f:

@@ -1,4 +1,8 @@
 {
-	"wikis": ["dawiki"],
-	"output_dir": "./psout"
+	"output_dir": "./psout",
+	"wikis": {
+		"dawiki": {
+			"language": "da"
+		}
+	}
 }

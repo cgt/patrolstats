@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css" type="text/css">
-	<title>Patruljeringsstatistik for de seneste 7 dage på dawiki</title>
+	<title>{{ msg.title | format(wiki=wiki) }}</title>
 </head>
 <body>
-	<h1>Patruljeringsstatistik for de seneste 7 dage på dawiki</h1>
-	<p>Senest opdateret: {{ timestamp }} UTC
+	<h1>{{ msg.title | format(wiki=wiki) }}</h1>
+	<p>{{ msg.lastupdated }}: {{ timestamp }}</p>
 	<table>
 		<thead>
 		<tr>
-			<th>Patruljeringer</th>
-			<th>Bruger</th>
+			<th>{{ msg.tableheaders.patrolscolumn }}</th>
+			<th>{{ msg.tableheaders.usercolumn }}</th>
 		</tr>
 		</thead>
 		{% for user, patroln in stats.iteritems() -%}
