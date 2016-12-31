@@ -2,7 +2,7 @@
 
 messages = {
     u"en": {
-        u"title": u"Patrol statistics for the last 7 days on %(wiki)s",
+        u"title": u"Patrol statistics for the last %(days)d days on %(wiki)s",
         u"lastupdated": u"Last updated",
         u"tableheaders": {
             u"patrolscolumn": u"Patrols",
@@ -10,7 +10,7 @@ messages = {
         },
     },
     u"da": {
-        u"title": u"Patruljeringsstatistik for de seneste 7 dage på %(wiki)s",
+        u"title": u"Patruljeringsstatistik for de seneste %(days)d dage på %(wiki)s",
         u"lastupdated": u"Senest opdateret",
         u"tableheaders": {
             u"patrolscolumn": u"Patruljeringer",

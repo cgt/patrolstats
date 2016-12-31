@@ -10,10 +10,10 @@
 		th { background: #F3F3F3; font-weight: bold; }
 		td { background: #FAFAFA; text-align: center; }
 	</style>
-	<title>{{ msg.title | format(wiki=wiki) }}</title>
+	<title>{{ msg.title | format(days=days, wiki=wiki) }}</title>
 </head>
 <body>
-	<h1>{{ msg.title | format(wiki=wiki) }}</h1>
+	<h1>{{ msg.title | format(days=days, wiki=wiki) }}</h1>
 	<p>{{ msg.lastupdated }}: {{ timestamp }}</p>
 	<table>
 		<thead>
